@@ -1,0 +1,93 @@
+body,ul,li {
+	padding:10px;
+	margin:0;
+}
+
+body {
+	font-size:12px;
+	font-family:helvetica;
+}
+#container {
+	margin: 50px auto;
+}
+#slideshow {
+	height:600px;
+	float:left;
+	position:relative;	/* On older OS versions "position" and "z-index" must be defined, */
+	z-index:1;			/* it seems that recent webkit is less picky and works anyway. */
+	overflow:hidden;
+}
+
+#scroller {
+	height:100%;
+	float:left;
+	padding:0;
+}
+
+#scroller ul {
+	list-style:none;
+	display:block;
+	float:left;
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	text-align:left;
+}
+
+#scroller li {
+	-webkit-box-sizing:border-box;
+	display:block; 
+	float:left;
+	width:800px; height:600px;
+}
+
+nav {
+	width:300px;
+	margin: 0 auto;
+}
+
+#prev, #next {
+	float:left;
+	font-weight:bold;
+	font-size:14px;
+	padding:5px 0;
+	width:80px;
+	cursor: pointer;
+}
+
+#next {
+	float:right;
+	text-align:right;
+}
+
+#indicator, #indicator > li {
+	display:block; 
+	float:left;
+	list-style:none;
+	padding:0; 
+	margin:0;
+}
+
+#indicator {
+	width:110px;
+	padding:12px 0 0 30px;
+}
+
+#indicator > li {
+	text-indent:-9999em;
+	width:8px; 
+	height:8px;
+	-webkit-border-radius:4px;
+	background:#ddd;
+	overflow:hidden;
+	margin-right:4px;
+}
+
+#indicator > li.active {
+	background:#888;
+}
+
+#indicator > li:last-child {
+	margin:0;
+}

@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* harrypujols.com designed and coded by Harry Pujols himself <cc>2008 Harry Pujols unless otherwise noted */
+
+@import url('dialog.css');
+
+@font-face {
+    font-family: 'pixChicagoRegular';
+    src: url('pixchicago-webfont.eot');
+    src: url('pixchicago-webfont.eot?#iefix') format('embedded-opentype'),
+         url('pixchicago-webfont.woff') format('woff'),
+         url('pixchicago-webfont.ttf') format('truetype'),
+         url('pixchicago-webfont.svg#pixChicagoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 62.5%;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+img {
+	max-width: 80%;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+h1, h2, #dropdown li {
+	font-family: 'pixChicagoRegular',  'Arial Black', sans serif;
+	font-weight: normal;
+	text-align: left;
+	font-size: 1em;	
+}
+
+#clock {
+	display: none;
+}

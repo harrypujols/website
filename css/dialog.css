@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Dialog
+----------------------------------*/
+
+.ui-dialog { 
+background-color: white;
+position: relative;
+}
+.ui-dialog .ui-dialog-titlebar { 
+  padding: 4px 0px 0px 0px; 
+  position: relative;
+  background-image: url(../images/titlebar.png);
+  background-position: 0px 20px;
+  border: 1px solid black;
+  height: 20px;
+}
+.ui-dialog .ui-dialog-title {
+  font-family: 'pixChicagoRegular',  'Arial Black', sans serif;
+  font-size: 8px;
+  background: white;
+  padding-left: 15px;
+  padding-right: 15px;
+} 
+.ui-dialog .ui-dialog-titlebar-close { 
+  float: left; 
+  width: 12px; 
+  height: 12px; 
+  margin: 2px 0px 0px 5px;
+  border: 1px black solid;
+  background-color: white;
+ -moz-box-shadow:  0 -1px 0 5px white;
+ -webkit-box-shadow:   0 -1px 0 5px white;
+  box-shadow:  0 -1px 0 5px white;
+}
+.ui-dialog .ui-dialog-titlebar-close span { 
+  display: none;  
+}
+.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus {  
+}
+.ui-dialog .ui-dialog-content { 
+  border: black double;
+  border-width: 0px 3px 3px 3px;
+  padding: 10px 5px 10px 5px;
+  zoom: 1;
+  width: 360px;
+}
+.ui-dialog .ui-dialog-buttonpane { 
+  text-align: left;
+  position: absolute;
+  top: 5px;
+  left: 30px;
+}
+.ui-dialog .ui-dialog-buttonpane button { 
+  float: left; 
+  margin: 1px 5px 1px 1px; 
+  cursor: pointer;
+  padding: 1px 1px 1px 1px; 
+  line-height: 5px; 
+  width: 15px; 
+  height: 15px;
+  text-align: center;
+  overflow: visible;
+  border: thin solid black;
+  background-color: white;
+}
+.ui-dialog .ui-dialog-buttonpane button:hover {
+	color: white;
+	background-color: black;
+}
+.ui-dialog .ui-resizable-se { 
+  right: 3px; 
+  bottom: 3px;
+}
+.ui-draggable .ui-dialog-titlebar { 
+  /*cursor: move; */
+}
+#adhelp p {
+	padding-left: 5px;
+	text-align: left;
+}
+
+/*special rules for comics*/
+
+.comic ul {
+	list-style: inside;
+	padding: 0;
+	margin: 0;
+}
+.comic li {
+	list-style: none;
+	display: none;
+}
+.comic li.current1, .comic li.current2, .comic li.current3, .comic li.current4, .comic li.current5 {
+	display: block;
+}
+.controls {
+	text-align: left;
+}
