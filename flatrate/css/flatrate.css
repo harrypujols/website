@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color: #C93;
+	background-image: url(../images/textura.jpg);
+	background-repeat: repeat;
+    text-align: center;
+}
+
+#container {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 80%;
+	color: #000;
+	background-color: #FFF;
+	width: 600px;
+	text-align: left;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	margin-top: 10%;
+	margin-right: auto;
+	margin-left: auto;
+}
+strong {
+	color: #FFF;
+	background-color: #000;
+	font-weight: bold;
+	font-size: 1.1em;
+	padding: 2px;
+}
+p a {
+	color: #000;
+	text-decoration: underline;	
+}
+a {
+	text-decoration: none;
+}
+p {
+	line-height: 1.1em;
+}
+button {
+	font-size: 1.5em;
+	font-weight: bold;
+	font-family: "Arial Black", Gadget, sans-serif;
+	background-color: #F00;
+	color: #FFF;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
