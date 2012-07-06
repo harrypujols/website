@@ -1,0 +1,167 @@
+<script type="text/javascript">
+$(document).ready(function() {
+//rollovers
+$("#.rollover img").hover(
+ function()
+ {
+  this.src = this.src.replace("_off","_on");
+ },
+ function()
+ {
+  this.src = this.src.replace("_on","_off");
+ }
+);
+//dragdrop
+$(function() {
+		$(".dragdrop").draggable({ revert: true, containment: '#container' });
+	});
+});
+//ajax
+$("a#back_btn").click(function() {
+	  $("div#loader").load("ajax/advertising01.html"); 
+	  
+});
+$("a#next").click(function() {
+	  $("div#loader").load("ajax/advertising03.html"); 
+	  
+});
+
+//dialog functions
+
+$(function(){
+				//oasis	
+				$('#oasis').dialog({
+					autoOpen: false,
+					width: 335,
+					close: function() {  
+					  $("#oasis").empty();
+					  var oreload = $('<iframe></iframe>').attr('src', 'http://player.vimeo.com/video/18854771?title=0&amp;byline=0&amp;portrait=0&amp;color=fff000').attr('width', '320').attr('height', '240').attr('frameborder', '0');
+					  $('#oasis').append(oreload);
+					}
+				});
+				
+				//oasis Link
+				$('#oasis_btn').click(function(){
+					$('#oasis').dialog('open');
+					return false;
+				});			
+			});	
+
+$(function(){
+				//mao	
+				$('#mao').dialog({
+					autoOpen: false,
+					width: 680
+				});
+				//mao Link
+				$('#mao_btn').click(function(){
+					$('#mao').dialog('open');
+					return false;
+				});
+			});
+$(function(){
+				//light	
+				$('#light').dialog({
+					autoOpen: false,
+					width: 740
+				});
+				//light Link
+				$('#light_btn').click(function(){
+					$('#light').dialog('open');
+					return false;
+				});
+			});
+$(function(){
+				//roast	
+				$('#roast').dialog({
+					autoOpen: false,
+					width: 620
+				});
+				//roast Link
+				$('#roast_btn').click(function(){
+					$('#roast').dialog('open');
+					return false;
+				});
+			});
+$(function(){
+				//69
+				$('#69').dialog({
+					autoOpen: false,
+					width: 386
+				});
+				//69 Link
+				$('#69_btn').click(function(){
+					$('#69').dialog('open');
+					return false;
+				});
+			});
+$(function(){
+				//number
+				$('#number').dialog({
+					autoOpen: false,
+					width: 720
+				});
+				//number Link
+				$('#number_btn').click(function(){
+					$('#number').dialog('open');
+					return false;
+				});
+			});
+</script>
+
+<div id="window">
+  <a href="#" onclick="$('#window').hide();"><div id="button"></div></a>
+  <h1>Advertising</h1>
+  <div id="content">
+      <ul>
+      	<li class="dragdrop"><a href="#" class="rollover" id="back_btn">
+        <img src="images/folder_off.png" alt="last folder" />
+        <p>back</p>
+        </a></li>
+        <li class="dragdrop"><a href="#" class="rollover" id="oasis_btn">
+        <img src="images/video_off.png" alt="oasis video" />
+        <p>oasis.mp4</p>
+        </a></li>
+        <li class="dragdrop"><a href="#" class="rollover" id="mao_btn">
+        <img src="images/img_off.png" alt="mao image" />
+        <p>mao.jpg</p>
+        </a></li>
+        <li class="dragdrop"><a href="#" class="rollover" id="light_btn">
+        <img src="images/img_off.png" alt="light image" />
+        <p>light.jpg</p>
+        </a></li>
+        <li class="dragdrop"><a href="#" class="rollover" id="roast_btn">
+        <img src="images/img_off.png" alt="roast image" />
+        <p>roast.jpg</p>
+        </a></li>
+        <li class="dragdrop"><a href="#" class="rollover" id="69_btn">
+        <img src="images/img_off.png" alt="69 image" />
+        <p>69.jpg</p>
+        </a></li>
+        <li class="dragdrop"><a href="#" class="rollover" id="number_btn">
+        <img src="images/img_off.png" alt="number image" />
+        <p>number.jpg</p>
+        </a></li>
+        <li id="next" class="dragdrop"><a href="#" class="rollover" id="next">
+        <img src="images/folder_off.png" alt="next folder" />
+        <p>next</p>
+        </a></li>
+      </ul>
+  </div>
+  <!-- ui-dialog -->
+   <div id="oasis" title="oasis.mp4">
+     <iframe src="http://player.vimeo.com/video/18854771?title=0&amp;byline=0&amp;portrait=0&amp;color=fff000" width="320" height="240" frameborder="0"></iframe>
+   </div>    
+
+  <div id="mao" title="mao.jpg">
+<img src="images/advertising/mao.jpg" width="660" height="495" alt="mao" /></div>
+  <div id="light" title="light.jpg">
+  <img src="images/advertising/light.jpg" width="700" height="321" alt="light" /></div>
+  <div id="roast" title="roast.jpg">
+  <img src="images/advertising/roast.jpg" width="600" height="492" alt="roast" /></div>
+  <div id="69" title="69.jpg">
+  <img src="images/advertising/vat69.jpg" width="366" height="578" alt="69" /></div>
+  <div id="number" title="number.jpg">
+  <img src="images/advertising/number.jpg" width="700" height="321" alt="number" /></div>
+<!-- ui-dialog -->
+

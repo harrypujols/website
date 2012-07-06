@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Mobile Site</title>
+<link href="../css/styles.css" rel="stylesheet" type="text/css">
+<!--[if IE]>
+<script src="scripts/modernizr.js"></script>
+<![endif]-->
+<SCRIPT LANGUAGE="javascript">
+<!--
+//Use for Mobile surfing
+// Palm gives width > 1 million
+// Win Mobile width = 240 (portrait) or 320 (landscape)
+// document.write('width=')
+// document.write(screen.width)
+// document.write(', height=')
+// document.write(screen.height)
+if ((screen.width >= 1000000)||(screen.width < 640))
+{parent.location.href='../mobile/index.html'}
+//-->
+</SCRIPT>
+</head>
+
+<body>
+<article>
+<img src="../images/warning_guy.png" width="44" height="43" alt="Introduction">
+<p>Ongoing project which started in 2011 as a complement to the full site.</p>
+  <p>Objective: Have a leaner, portable site for devices using the QR code printed in my resumes, business cards, stationery and other identity items. </a>.
+  </p>
+  <p>Technology used: HTML5, CSS3, JavaScript, Jquery.</p>
+  <p>Software used: TextWrangler, iOS Simulator.</p>
+  <p>Chances are you won't see the current page on a phone. It's supposed to take you directly to the mobile site.</p>
+<form action="../mobile/index.html" method="get">
+  <button name="enter" type="submit" value="enter">enter</button>
+</form>
+<form action="../index.html" method="get">
+<button name="cancel" value="Close Window" 
+onclick="window.close()">cancel</button>
+</form>
+  </article>
+  
+<!--google analytics-->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-9259708-1");
+pageTracker._trackPageview();
+} catch(err) {}</script><!--google analytics-->
+
+</body>
+</html>

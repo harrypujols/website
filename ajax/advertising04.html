@@ -1,0 +1,113 @@
+<script type="text/javascript">
+$(document).ready(function() {
+//rollovers
+$("#.rollover img").hover(
+ function()
+ {
+  this.src = this.src.replace("_off","_on");
+ },
+ function()
+ {
+  this.src = this.src.replace("_on","_off");
+ }
+);
+//dragdrop
+$(function() {
+		$(".dragdrop").draggable({ revert: true, containment: '#container' });
+	});
+});
+//ajax
+$("a#back_btn").click(function() {
+	  $("div#loader").load("ajax/advertising03.html"); 
+	  
+});
+$("a#next").click(function() {
+	  $("div#loader").load("ajax/advertising01.html"); 
+	  
+});
+
+
+//dialog functions
+
+$(function(){
+				//morning	
+				$('#morning').dialog({
+					autoOpen: false,
+					width: 335,
+					close: function() {  
+					  $("#morning").empty();
+					  var mreload = $('<iframe></iframe>').attr('src', 'http://player.vimeo.com/video/18854950?title=0&amp;byline=0&amp;portrait=0&amp;color=fff000').attr('width', '320').attr('height', '240').attr('frameborder', '0');
+					  $('#morning').append(mreload);
+					}
+				});
+				//morning Link
+				$('#morning_btn').click(function(){
+					$('#morning').dialog('open');
+					return false;
+				});
+			});
+
+$(function(){
+				//wow	
+				$('#wow').dialog({
+					autoOpen: false,
+					width: 870
+				});
+				//wow Link
+				$('#wow_btn').click(function(){
+					$('#wow').dialog('open');
+					return false;
+				});
+			});
+$(function(){
+				//burger	
+				$('#burger').dialog({
+					autoOpen: false,
+					width: 680
+				});
+				//burger Link
+				$('#burger_btn').click(function(){
+					$('#burger').dialog('open');
+					return false;
+				});
+			});
+</script>
+
+<div id="window">
+  <a href="#" onclick="$('#window').hide();"><div id="button"></div></a>
+  <h1>Advertising</h1>
+  <div id="content">
+      <ul>
+      	<li class="dragdrop"><a href="#" class="rollover" id="back_btn">
+        <img src="images/folder_off.png" alt="back folder" />
+        <p>back</p>
+        </a></li>
+        <li class="dragdrop"><a href="#" class="rollover" id="morning_btn">
+        <img src="images/video_off.png" alt="morning video" />
+        <p>morning.mp4</p>
+        </a></li>
+        <li class="dragdrop"><a href="#" class="rollover" id="wow_btn">
+        <img src="images/img_off.png" alt="wow image" />
+        <p>wow.jpg</p>
+        </a></li>
+        <li class="dragdrop"><a href="#" class="rollover" id="burger_btn">
+        <img src="images/img_off.png" alt="burger image" />
+        <p>burger.jpg</p>
+        </a></li>
+        <li id="next" class="dragdrop"><a href="#" class="rollover" id="next">
+        <img src="images/folder_off.png" alt="next folder" />
+        <p>next</p>
+        </a></li>
+      </ul>
+  </div>
+  <!-- ui-dialog -->
+   <div id="morning" title="morning.mp4"> 
+        <iframe src="http://player.vimeo.com/video/18854950?title=0&amp;byline=0&amp;portrait=0&amp;color=fff000" width="320" height="240" frameborder="0"></iframe> 
+   </div>    
+</div>
+  <div id="wow" title="wow.jpg">
+<img src="images/advertising/wow.jpg" width="850" height="621" alt="wow" /></div>
+  <div id="burger" title="burger.jpg">
+<img src="images/advertising/burger.jpg" width="660" height="495" alt="burger" /></div>
+<!-- ui-dialog -->
+

@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "pix Chicago";
+	src: url("../../css/pixchicago.ttf");
+}
+
+@font-face {
+	font-family: "pix Chicago-i";
+	src: url("../../css/pixchicago.svg.xml") format("svg");
+	src: url("../../css/pixchicago.svg") format("svg");
+}
+
+@font-face {
+	font-family: "pix Chicago-w";
+	src: url("../../css/pixchicago.eot");
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 18px;
+}
+
+h1, h2, li, button {
+	font-family: "pix Chicago", "pix Chicago-i", "pix Chicago-w", Tahoma, Geneva, sans-serif;
+	font-size: 18px;
+	text-transform: capitalize;	
+}
+
+h1, h2 {
+	text-align: center;
+	width: 100%;
+	border-bottom: medium solid black;
+	padding-bottom: 10px;
+}
+
+
+a, a:visited {
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+	-webkit-transition: all 100ms ease-in-out;
+}
+
+a:active, a:hover {
+	color: white;
+	background-color: black;
+	-webkit-transition: all 100ms ease-in-out;
+}
+
+ul {
+	padding: 0 5px;;
+	width: 100%;
+}
+
+li {
+	list-style: none;
+	background-image: url(../../images/list.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	width: 98%;
+}
+
+p {
+	padding: 2px 2px 2px 8px;
+}
+
+button {
+	float: left;
+	background-color: white;
+	border: none;
+	margin-right: -30px;
+}
+
+.page {
+	display: none;
+}
+
+@-webkit-keyframes slide {
+		0% {
+			-webkit-transform: translate(1000px);
+			}
+		100%{
+			-webkit-transform: translate(0);
+			}
+	}
+
+.current {
+	display: block;
+	-webkit-animation: slide 200ms ease-in;
+}
