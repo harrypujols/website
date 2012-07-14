@@ -13,6 +13,20 @@ if( navigator.userAgent.match(/Android/i) ||
 else{
 var myScroll;
 
+//toggle visibility of buttons on first and last page	
+function toggleButtons() {
+			  $('#next').css( 'opacity' , 1 ).css( 'cursor' , 'pointer' ); 
+			  $('#prev').css( 'opacity' , 1 ).css( 'cursor' , 'pointer' );
+					  if ($('#indicator li:last-child').hasClass('active')) {
+				   $('#next').css( 'opacity' , 0 ).css( 'cursor' , 'default' );
+				   $('#prev').css( 'opacity' , 1 ).css( 'cursor' , 'pointer' ); 
+			  }
+			  
+			  if ($('#indicator li:first-child').hasClass('active')) {
+				  $('#prev').css( 'opacity' , 0  ).css( 'cursor' , 'default' );
+				   $('#next').css( 'opacity' , 1 ).css( 'cursor' , 'pointer' ); 
+			  }
+}
 function loaded() {
 	myScroll = new iScroll('slideshow', {
 		snap: true,
@@ -21,6 +35,7 @@ function loaded() {
 		onScrollEnd: function () {
 			document.querySelector('#indicator > li.active').className = '';
 			document.querySelector('#indicator > li:nth-child(' + (this.currPageX+1) + ')').className = 'active';
+			toggleButtons();
 		}
 	 });
 }
