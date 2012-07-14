@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?
-$lastPage = 41; //indicates the last page in the comic
+$lastPage = 33; //indicates the last page in the comic
 $shortName = "kill"; //indicates the name of the folder where the comic is located
 $comicName = "Kill Or Be Killed";
 $feedName = "Kill_Or_Be_Killed";

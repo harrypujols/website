@@ -1,0 +1,19 @@
+## The basics to get mod_rewrite going ##
+RewriteEngine on
+RewriteBase /
+## rewrite the index file in your root directory ##
+## this should work, regardless if you have index.html, index.htm, 
+## or index.php
+RewriteRule ^index\.(htm|html|php) http://www.harrypujols.com/ [R=301,L]
+## rewrite the index file in subdirectories
+RewriteRule ^(.*)/index\.(htm|html|php) http://www.harrypujols.com/$1/ [R=301,L]
+
+## match condition: skip any www requests 
+##  or another way of saying this - match anything that doesn't start
+##  with www
+RewriteCond %{HTTP_HOST} !^www\..*
+##  change any requests to www.harrypujols.com 
+##   combined with the above RewriteCond means any
+##   non-www requests are redirected to www.harrypujols.com
+##   the %{REQUEST_URI} appends whatever url to www.harrypujols.com
+RewriteRule ^.*$     http://www.harrypujols.com%{REQUEST_URI} [R=permanent,L]
