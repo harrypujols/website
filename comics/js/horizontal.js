@@ -88,6 +88,14 @@ var dots = $('#indicator li')
 var numberOfDots= dots.length;
 $('#indicator').css('width', dotWidth*numberOfDots);
 
+//jump to page
+
+$(dots).click(function(){
+					var jumpage = $('#indicator li').index(this);
+					myScroll.scrollToPage(jumpage, 0);
+				});
+
+
  //end document ready
 });
 
