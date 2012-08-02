@@ -7,16 +7,14 @@ if( navigator.userAgent.match(/Android/i) ||
  navigator.userAgent.match(/iPod/i)
  ){
   $('#iscroll').remove();
-/*  $('#container img').css('width', 100);*/
 }
 
-else{
+else {
 var myScroll;
 
 //toggle visibility of buttons on first and last page	
 function toggleButtons() {
-			  $('#next').css( 'opacity' , 1 ).css( 'cursor' , 'pointer' ); 
-			  $('#prev').css( 'opacity' , 1 ).css( 'cursor' , 'pointer' );
+			  $('#next, #prev').css( 'opacity' , 1 ).css( 'cursor' , 'pointer' ); 
 					  if ($('#indicator li:last-child').hasClass('active')) {
 				   $('#next').css( 'opacity' , 0 ).css( 'cursor' , 'default' );
 				   $('#prev').css( 'opacity' , 1 ).css( 'cursor' , 'pointer' ); 
@@ -27,6 +25,8 @@ function toggleButtons() {
 				   $('#next').css( 'opacity' , 1 ).css( 'cursor' , 'pointer' ); 
 			  }
 }
+
+//slideshow settings	
 function loaded() {
 	myScroll = new iScroll('slideshow', {
 		snap: true,
@@ -76,7 +76,6 @@ var numberOfSlides = slides.length;
  $('#slideshow').css('width', slideWidth);
  $('#container').css('width', slideWidth + 55);
 
- 
 //make indicator's list dynamic
 $(slides).clone().appendTo("#indicator");
 $('#indicator li').empty();
@@ -89,12 +88,10 @@ var numberOfDots= dots.length;
 $('#indicator').css('width', dotWidth*numberOfDots);
 
 //jump to page
-
 $(dots).click(function(){
-					var jumpage = $('#indicator li').index(this);
-					myScroll.scrollToPage(jumpage, 0);
-				});
-
+ 	var jump = $('#indicator li').index(this);
+ 	myScroll.scrollToPage(jump, 0);
+});
 
  //end document ready
 });
