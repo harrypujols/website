@@ -10,16 +10,7 @@ $('a#share').click(function() {
 	});
 	
 //hides dropdown menu when going somewhere else in the top bar
-$("a#reset").hover(function() {
-	  $("div#dropdown").hide();
-  });
-$("a#link1").hover(function() {
-	  $("div#dropdown").hide();
-  });
-$("a#link2").hover(function() {
-	  $("div#dropdown").hide();
-  });
-$(".dragdrop").hover(function() {
+$("a#reset, a#link1, a#link2, .dragdrop").hover(function() {
 	  $("div#dropdown").hide();
   });
 
