@@ -19,67 +19,25 @@ $("a#next").click(function() {
 	  $("div#loader").load("ajax/advertising02.html"); 
 	  
 });
-//dialog functions
-$(function(){
-				//help		
-				$('#adhelp').dialog({
+//dialog function
+
+popup = function(name,number) {
+				$('#'+name).dialog({
 					autoOpen: false,
-					width: 300
+					width: number
 				});
-				//help Link
-				$('#adhelp_btn').click(function(){
-					$('#adhelp').dialog('open');
+				$('#'+name+'_btn').click(function(){
+					$('#'+name).dialog('open');
 					return false;
 				});
-			});
-$(function(){
-				//boxeo		
-				$('#boxeo').dialog({
-					autoOpen: false,
-					width: 620
-				});
-				//boxeo Link
-				$('#boxeo_btn').click(function(){
-					$('#boxeo').dialog('open');
-					return false;
-				});
-			});
-$(function(){
-				//cookies	
-				$('#cookies').dialog({
-					autoOpen: false,
-					width: 470
-				});
-				//cookies Link
-				$('#cookies_btn').click(function(){
-					$('#cookies').dialog('open');
-					return false;
-				});
-			});
-$(function(){
-				//corn	
-				$('#corn').dialog({
-					autoOpen: false,
-					width: 470
-				});
-				//corn Link
-				$('#corn_btn').click(function(){
-					$('#corn').dialog('open');
-					return false;
-				});
-			});
-$(function(){
-				//eggs	
-				$('#eggs').dialog({
-					autoOpen: false,
-					width: 470
-				});
-				//eggs Link
-				$('#eggs_btn').click(function(){
-					$('#eggs').dialog('open');
-					return false;
-				});
-			});
+}
+
+popup('adhelp',300);
+popup('boxeo',620);
+popup('cookies',470);
+popup('corn',470);
+popup('eggs',470);
+
 </script>
 <div id="window">
   <a href="#" onclick="$('#window').hide();"><div id="button"></div></a>

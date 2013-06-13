@@ -46,67 +46,24 @@ $(function(){
 					return false;
 				});			
 			});	
+			
+popup = function(name,number) {
+				$('#'+name).dialog({
+					autoOpen: false,
+					width: number
+				});
+				$('#'+name+'_btn').click(function(){
+					$('#'+name).dialog('open');
+					return false;
+				});
+}
 
-$(function(){
-				//mao	
-				$('#mao').dialog({
-					autoOpen: false,
-					width: 680
-				});
-				//mao Link
-				$('#mao_btn').click(function(){
-					$('#mao').dialog('open');
-					return false;
-				});
-			});
-$(function(){
-				//light	
-				$('#light').dialog({
-					autoOpen: false,
-					width: 740
-				});
-				//light Link
-				$('#light_btn').click(function(){
-					$('#light').dialog('open');
-					return false;
-				});
-			});
-$(function(){
-				//roast	
-				$('#roast').dialog({
-					autoOpen: false,
-					width: 620
-				});
-				//roast Link
-				$('#roast_btn').click(function(){
-					$('#roast').dialog('open');
-					return false;
-				});
-			});
-$(function(){
-				//69
-				$('#69').dialog({
-					autoOpen: false,
-					width: 386
-				});
-				//69 Link
-				$('#69_btn').click(function(){
-					$('#69').dialog('open');
-					return false;
-				});
-			});
-$(function(){
-				//number
-				$('#number').dialog({
-					autoOpen: false,
-					width: 720
-				});
-				//number Link
-				$('#number_btn').click(function(){
-					$('#number').dialog('open');
-					return false;
-				});
-			});
+popup('mao',680);
+popup('light',740);
+popup('roast',620);
+popup('69',386);
+popup('number',720);
+
 </script>
 
 <div id="window">

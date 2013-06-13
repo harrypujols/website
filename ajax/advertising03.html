@@ -26,92 +26,37 @@ $("a#next").click(function() {
 	  
 });
 
-//for the bug that keeps playing video when you close the window		
-$('.ui-dialog-titlebar-close').click(function(){
-					$(".video").remove();
-					return false;
-		});	
-
 //dialog functions
-
-$(function(){
-				//mower	
-				$('#mower').dialog({
+popup = function(name,attribute) {
+				$('#'+name).dialog({
+					autoOpen: false,
+					width: attribute
+				});
+				$('#'+name+'_btn').click(function(){
+					$('#'+name).dialog('open');
+					return false;
+				});
+}
+videopop = function(name,attribute) {
+				$('#'+name).dialog({
 					autoOpen: false,
 					width: 335,
 					close: function() {  
-					  $("#mower").empty();
-					  var moreload = $('<iframe></iframe>').attr('src', 'http://player.vimeo.com/video/18855005?title=0&amp;byline=0&amp;portrait=0&amp;color=fff000').attr('width', '320').attr('height', '240').attr('frameborder', '0');
-					  $('#mower').append(moreload);
-					}
+							$('#'+name).empty();
+							var reload = $('<iframe></iframe>').attr('src', attribute).attr('width', '320').attr('height', '240').attr('frameborder', '0');
+							$('#'+name).append(reload);
+						}
 				});
-				//mower Link
-				$('#mower_btn').click(function(){
-					$('#mower').dialog('open');
+				$('#'+name+'_btn').click(function(){
+					$('#'+name).dialog('open');
 					return false;
 				});
-			});
-
-$(function(){
-				//polos	
-			$('#polos').dialog({
-					autoOpen: false,
-					width: 335,
-					close: function() {  
-					  $("#polos").empty();
-					  var poreload = $('<iframe></iframe>').attr('src', 'http://player.vimeo.com/video/18855070?title=0&amp;byline=0&amp;portrait=0&amp;color=fff000').attr('width', '320').attr('height', '240').attr('frameborder', '0');
-					  $('#polos').append(poreload);
-					}
-				});		
-				//polos Link
-				$('#polos_btn').click(function(){
-					$('#polos').dialog('open');
-					return false;
-				});
-			});
-$(function(){
-				//trimmer	
-	             
-				 $('#trimmer').dialog({
-					autoOpen: false,
-					width: 335,
-					close: function() {  
-					  $("#trimmer").empty();
-					  var tireload = $('<iframe></iframe>').attr('src', 'http://player.vimeo.com/video/18855116?title=0&amp;byline=0&amp;portrait=0&amp;color=fff000').attr('width', '320').attr('height', '240').attr('frameborder', '0');
-					  $('#trimmer').append(tireload);
-					}
-				});
-	
-				//trimmer Link
-				$('#trimmer_btn').click(function(){
-					$('#trimmer').dialog('open');
-					return false;
-				});
-			});
-$(function(){
-				//bread	
-				$('#bread').dialog({
-					autoOpen: false,
-					width: 720
-				});
-				//bread Link
-				$('#bread_btn').click(function(){
-					$('#bread').dialog('open');
-					return false;
-				});
-			});
-$(function(){
-				//fruit
-				$('#fruit').dialog({
-					autoOpen: false,
-					width: 720
-				});
-				//fruit Link
-				$('#fruit_btn').click(function(){
-					$('#fruit').dialog('open');
-					return false;
-				});
-			});
+}
+videopop('mower','http://player.vimeo.com/video/18855005?title=0&amp;byline=0&amp;portrait=0&amp;color=fff000');
+videopop('polos','http://player.vimeo.com/video/18855070?title=0&amp;byline=0&amp;portrait=0&amp;color=fff000');
+videopop('trimmer','http://player.vimeo.com/video/18855116?title=0&amp;byline=0&amp;portrait=0&amp;color=fff000');
+popup('bread',720);
+popup('fruit',720);
 </script>
 
 <div id="window">

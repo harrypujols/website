@@ -46,31 +46,18 @@ $(function(){
 					return false;
 				});
 			});
-
-$(function(){
-				//wow	
-				$('#wow').dialog({
+popup = function(name,attribute) {
+				$('#'+name).dialog({
 					autoOpen: false,
-					width: 870
+					width: attribute
 				});
-				//wow Link
-				$('#wow_btn').click(function(){
-					$('#wow').dialog('open');
+				$('#'+name+'_btn').click(function(){
+					$('#'+name).dialog('open');
 					return false;
 				});
-			});
-$(function(){
-				//burger	
-				$('#burger').dialog({
-					autoOpen: false,
-					width: 680
-				});
-				//burger Link
-				$('#burger_btn').click(function(){
-					$('#burger').dialog('open');
-					return false;
-				});
-			});
+}
+popup('wow',870);
+popup('burger',680);
 </script>
 
 <div id="window">

@@ -1,43 +1,39 @@
 //home page
-
 $(document).ready(function() {
 //to load the waiting image while the real image loads
 var loading = $('<img />').attr('src', 'images/watch.gif').attr('id', 'loading');
-
-//share shows dropdown menu
-$('a#share').click(function() {
-	$("#dropdown").toggle();
-	});
 	
 //hides dropdown menu when going somewhere else in the top bar
-$("a#reset, a#link1, a#link2, .dragdrop").hover(function() {
-	  $("div#dropdown").hide();
+$("#link1, #link2, .dragdrop, #reset").hover(function() {
+	  $("#dropdown").hide();
   });
 
-//ajax functions
-  $("a#link1").click(function() {
-	  $("div#loader").append(loading);
-	  $("div#loader").load("ajax/about.html");
-  });
-  $("a#link2").click(function() {
-	  $("div#loader").append(loading);
-	  $("div#loader").load("ajax/contact.html");
-  });
- $("a#link3").click(function() {
-	  $("div#loader").append(loading);
-	  $("div#loader").load("ajax/social.html");
-  });
-    $("a#link5").click(function() {
-	  $("div#loader").append(loading);
-	  $("div#loader").load("ajax/interactive.html");
-  });
-	  $("a#link6").click(function() {
-	  $("div#loader").append(loading);
-	  $("div#loader").load("ajax/advertising01.html");
-  });
+//loaders
+$('a').click(function(){
+	x = $(this).attr('id');
+	switch(x) {
+	case "link1":
+	  y = "about"; break;
+	case "link2":
+	  y = "contact"; break;
+	case "link3":
+	  y = "social"; break;
+	case "link5":
+	  y = "interactive"; break;
+	case "link6":
+	  y = "advertising01"; break;
+	case "share":
+	  $("#dropdown").toggle(); return; break;
+	default:
+	  return;
+	}
+	$("#loader").append(loading);
+	$("#loader").load("ajax/"+y+".html");
+	console.log(y);
+});
   
 //rollover function
-$("#.rollover img").hover(
+$(".rollover img").hover(
  function()
  {
   this.src = this.src.replace("_off","_on");
