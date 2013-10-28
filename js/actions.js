@@ -270,6 +270,15 @@ $(function($) {
     seedTime: undefined,
     timeout: 1000 // 1000 = one second, 60000 = one minute
   };
+
+  //hide my email from bots
+    $(function() {
+  var m = 'mail';
+  var a = '@';
+  var i = 'harrypujols';
+  var l = '.com';
+     $('#email').replaceWith(m+a+i+l);
+  });
  
 //Start ↑ ↑ ↓ ↓ ← → ← → B  A
 var contra = "http://www.masswerk.at/flyer/flyer.html";

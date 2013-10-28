@@ -2,7 +2,19 @@
   <a href="#" onclick="$('#window').hide();"><div id="button"></div></a>
   <h1>Contact</h1>
   <div id="content">
-  <p><strong>email:</strong> mail@harrypujols.com</p>
+  <p><strong>email:</strong>
+  	<span id="email"></span>
+  	<script>
+  	  //hide my email from bots
+	    $(function() {
+	  var m = 'mail';
+	  var a = '@';
+	  var i = 'harrypujols';
+	  var l = '.com';
+	     $('#email').replaceWith(m+a+i+l);
+	  });
+  	</script>
+  </p>
   <p><strong>phone:</strong> 646-770-0740</p>
   <p><strong>AIM:</strong> harrymfa</p>
   <p>New York, NY 10025<br />United States of America</p>
