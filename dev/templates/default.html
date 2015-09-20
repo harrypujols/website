@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="author" content="{{ site.author }}" />
+    <link href="/css/main.css" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/github.min.css" rel="stylesheet">
+    {% block head %}{% endblock %}
+    <link href="/atom.xml" rel="alternate" type="application/atom+xml" title="{{ site.title }} Feed">
+  </head>
+  <body class="{{ page.title | replace(' ', '-', 'g') | lower }}" >
+    <div class="header">
+      {% include "partials/_nav.html" %}
+    </div>
+    <div class="container">
+      {% block content %}{% endblock %}
+      <div class="footer">
+        <p>
+          &copy; {{ site.time | date('Y') }} Harry Pujols |
+          <a href="/atom.xml">RSS feed</a>
+        </p>
+      </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+    <script src="/js/scripts.js"></script>
+    <script src="/js/main.js"></script>
+    {% block footer %}{% endblock %}
+  </body>
+</html>
