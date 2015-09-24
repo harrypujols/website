@@ -270,7 +270,7 @@ $(function($) {
     seedTime: undefined,
     timeout: 1000 // 1000 = one second, 60000 = one minute
   };
- 
+  
 //Start ↑ ↑ ↓ ↓ ← → ← → B  A
 var contra = "http://www.masswerk.at/flyer/flyer.html";
 var keys     = [];
