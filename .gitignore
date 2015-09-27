@@ -3,3 +3,9 @@
 .DS_Store
 .sass-cache
 .publish
+.htaccess
+.DS_Store
+originals/
+reel/
+video/
+_notes

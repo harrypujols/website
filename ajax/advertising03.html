@@ -1,0 +1,117 @@
+<script type="text/javascript">
+$(document).ready(function() {
+//rollovers
+$("#.rollover img").hover(
+ function()
+ {
+  this.src = this.src.replace("_off","_on");
+ },
+ function()
+ {
+  this.src = this.src.replace("_on","_off");
+ }
+);
+//dragdrop
+$(function() {
+		$(".dragdrop").draggable({ revert: true, containment: '#container' });
+	});
+});
+//ajax
+$("a#back_btn").click(function() {
+	  $("div#loader").load("ajax/advertising02.html"); 
+	  
+});
+$("a#next").click(function() {
+	  $("div#loader").load("ajax/advertising04.html"); 
+	  
+});
+
+//dialog functions
+popup = function(name,attribute) {
+				$('#'+name).dialog({
+					autoOpen: false,
+					width: attribute
+				});
+				$('#'+name+'_btn').click(function(){
+					$('#'+name).dialog('open');
+					return false;
+				});
+}
+videopop = function(name,attribute) {
+				$('#'+name).dialog({
+					autoOpen: false,
+					width: 335,
+					close: function() {  
+							$('#'+name).empty();
+							var reload = $('<iframe></iframe>').attr('src', attribute).attr('width', '320').attr('height', '240').attr('frameborder', '0');
+							$('#'+name).append(reload);
+						}
+				});
+				$('#'+name+'_btn').click(function(){
+					$('#'+name).dialog('open');
+					return false;
+				});
+}
+videopop('mower','http://player.vimeo.com/video/18855005?title=0&amp;byline=0&amp;portrait=0&amp;color=fff000');
+videopop('polos','http://player.vimeo.com/video/18855070?title=0&amp;byline=0&amp;portrait=0&amp;color=fff000');
+videopop('trimmer','http://player.vimeo.com/video/18855116?title=0&amp;byline=0&amp;portrait=0&amp;color=fff000');
+popup('bread',720);
+popup('fruit',720);
+</script>
+
+<div id="window">
+  <a href="#" onclick="$('#window').hide();"><div id="button"></div></a>
+  <h1>Advertising</h1>
+  <div id="content">
+      <ul>
+      	<li class="dragdrop"><a href="#" class="rollover" id="back_btn">
+        <img src="images/folder_off.png" alt="last folder" />
+        <p>back</p>
+        </a></li>
+        <li class="dragdrop"><a href="#" class="rollover" id="mower_btn">
+        <img src="images/video_off.png" alt="mower video" />
+        <p>mower.mp4</p>
+        </a></li>
+        <li class="dragdrop"><a href="#" class="rollover" id="polos_btn">
+        <img src="images/video_off.png" alt="polos video" />
+        <p>polos.mp4</p>
+        </a></li>
+        <li class="dragdrop"><a href="#" class="rollover" id="trimmer_btn">
+        <img src="images/video_off.png" alt="trimmer video" />
+        <p>trimmer.mp4</p>
+        </a></li>
+        <li class="dragdrop"><a href="#" class="rollover" id="bread_btn">
+        <img src="images/img_off.png" alt="bread image" />
+        <p>bread.jpg</p>
+        </a></li>
+        <li class="dragdrop"><a href="#" class="rollover" id="fruit_btn">
+        <img src="images/img_off.png" alt="fruit image" />
+        <p>fruit.jpg</p>
+        </a></li>
+        <li id="next" class="dragdrop"><a href="#" class="rollover" id="next">
+        <img src="images/folder_off.png" alt="next folder" />
+        <p>next</p>
+        </a></li>
+      </ul>
+  </div>
+  <!-- ui-dialog -->
+   <div id="mower" title="mower.mp4">
+    <iframe src="http://player.vimeo.com/video/18855005?title=0&amp;byline=0&amp;portrait=0&amp;color=fff000" width="320" height="240" frameborder="0"></iframe>
+   </div> 
+      
+  <div id="polos" title="polos.mp4">
+            <iframe src="http://player.vimeo.com/video/18855070?title=0&amp;byline=0&amp;portrait=0&amp;color=fff000" width="320" height="240" frameborder="0"></iframe>
+  
+  </div>
+  
+<div id="trimmer" title="trimmer.mp4">
+   <iframe src="http://player.vimeo.com/video/18855116?title=0&amp;byline=0&amp;portrait=0&amp;color=fff000" width="320" height="240" frameborder="0"></iframe>
+</div>
+
+  <div id="bread" title="bread.jpg">
+<img src="images/advertising/bread.jpg" width="700" height="472" alt="bread" /></div>
+  <div id="fruit" title="fruit.jpg">
+<img src="images/advertising/fruit.jpg" width="700" height="469" alt="fruit" /></div>
+<!-- ui-dialog -->
+
+</div>

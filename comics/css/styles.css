@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise);
+
+html, body {
+	margin: 0;
+	padding: 0;
+	-webkit-animation: fadein 1s ease-in;	
+}
+
+body {
+	font: 62.5% Arial, Helvetica, sans-serif;
+	color: black;
+	background: url(../images/background_02.png) repeat;
+}
+
+#header {
+	width: 100%;
+	margin: 0;
+	padding: 10px 20px;
+	text-align: center;
+	background-color: black;
+	color: white;
+}
+
+h1 {
+	margin-top: 15px;
+	font-size: 2em;
+    font-family: 'Waiting for the Sunrise';
+}
+
+a {
+	text-decoration: none;
+}
+
+#header a {
+	color: white;
+}
+
+#header a:hover {
+	color: grey;
+}
+
+#social {
+	margin: 5px auto;
+}
+
+ul {
+	-webkit-animation: fadein 2s ease-in;
+}
+
+li a {
+	color: black;
+}
+
+li a:hover {
+	color: white;
+}
+
+li {
+	background: white;
+	padding: 10px 5px;
+	margin: 5px;
+	width: 250px;
+	list-style: none;
+	float: left;
+	margin-right: 2px;
+	text-align: center;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+li:hover {
+	background: grey;
+}
+
+#grid {
+	width: 80%;
+	margin: 20px auto;
+}
+
+.p {
+	display: block;
+    font-size: 1.4em;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+a, a:hover, li, li:hover {
+	-webkit-transition: all 300ms ease-in;
+	-moz-transition: all 300ms ease-in;
+	-o-transition: all 300ms ease-in;
+}
+
+@-webkit-keyframes fadein {
+0% {
+   opacity: 0;
+  }
+50% {
+	opacity: 0;
+}
+100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,86 @@
+<script type="text/javascript">
+$(document).ready(function() {
+//rollover function
+$("#.rollover img").hover(
+ function()
+ {
+  this.src = this.src.replace("_off","_on");
+ },
+ function()
+ {
+  this.src = this.src.replace("_on","_off");
+ }
+);
+$(function() {
+		$(".dragdrop").draggable({ revert: true, containment: '#container' });
+	});
+});
+$("a#next").click(function() {
+	  $("div#loader").load("ajax/advertising02.html"); 
+	  
+});
+//dialog function
+
+popup = function(name,number) {
+				$('#'+name).dialog({
+					autoOpen: false,
+					width: number
+				});
+				$('#'+name+'_btn').click(function(){
+					$('#'+name).dialog('open');
+					return false;
+				});
+}
+
+popup('adhelp',300);
+popup('boxeo',620);
+popup('cookies',470);
+popup('corn',470);
+popup('eggs',470);
+
+</script>
+<div id="window">
+  <a href="#" onclick="$('#window').hide();"><div id="button"></div></a>
+  <h1>Advertising</h1>
+  <div id="content">
+      <ul>
+      	<li class="dragdrop"><a href="#" class="rollover" id="adhelp_btn">
+        <img src="images/help_off.png" alt="about this section" />
+        <p>about.txt</p>
+        </a></li>
+        <li class="dragdrop"><a href="#" class="rollover" id="boxeo_btn">
+        <img src="images/img_off.png" alt="boxeo image" />
+        <p>boxeo.jpg</p>
+        </a></li>
+        <li class="dragdrop"><a href="#" class="rollover" id="cookies_btn">
+        <img src="images/img_off.png" alt="cookies image" />
+        <p>cookies.jpg</p>
+        </a></li>
+        <li class="dragdrop"><a href="#" class="rollover" id="corn_btn">
+        <img src="images/img_off.png" alt="corn image" />
+        <p>corn.jpg</p>
+        </a></li>
+        <li class="dragdrop"><a href="#" class="rollover" id="eggs_btn">
+        <img src="images/img_off.png" alt="eggs image" />
+        <p>eggs.jpg</p>
+        </a></li>
+        <li id="next" class="dragdrop"><a href="#" class="rollover" id="next">
+        <img src="images/folder_off.png" alt="next folder" />
+        <p>next</p>
+        </a></li>
+      </ul>
+  </div>
+  <!-- ui-dialog -->
+  <div id="adhelp" title="about.txt">
+<p>Harry worked for many years as an advertising copywriter, which you will find strange, since this work is more "visual" and less copy-heavy.</p>
+  </div>
+   <div id="boxeo" title="boxeo.jpg">
+  <img src="images/advertising/boxeo.jpg" width="600" height="492" alt="boxeo" /></div>
+  <div id="cookies" title="cookies.jpg">
+  <img src="images/advertising/cookies.jpg" width="450" height="583" alt="cookies" /></div>
+  <div id="corn" title="corn.jpg">
+  <img src="images/advertising/corn.jpg" width="450" height="583" alt="cookies" /></div>
+  <div id="eggs" title="eggs.jpg">
+  <img src="images/advertising/eggs.jpg" width="450" height="583" alt="cookies" /></div>
+<!-- ui-dialog -->
+</div>

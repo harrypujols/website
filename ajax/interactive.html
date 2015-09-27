@@ -1,0 +1,69 @@
+<script type="text/javascript">
+$(document).ready(function() {
+//rollover function
+$("#.rollover img").hover(
+ function()
+ {
+  this.src = this.src.replace("_off","_on");
+ },
+ function()
+ {
+  this.src = this.src.replace("_on","_off");
+ }
+);
+$(function() {
+		$(".dragdrop").draggable({ revert: true, containment: '#container' });
+	});
+});
+
+//dialog functions
+$(function(){
+				//help		
+				$('#webhelp').dialog({
+					autoOpen: false,
+					width: 300
+				});
+				//help Link
+				$('#webhelp_btn').click(function(){
+					$('#webhelp').dialog('open');
+					return false;
+				});
+			});
+</script>
+<div id="window">
+  <a href="#" onclick="$('#window').hide();"><div id="button"></div></a>
+  <h1>Interactive</h1>
+  <div id="content">
+      <ul>
+      	<li class="dragdrop"><a href="#" class="rollover" id="webhelp_btn">
+        <img src="images/help_off.png" alt="about" />
+        <p>about.txt</p>
+        </a></li>
+        <li class="dragdrop"><a href="links/flatrate.html" class="rollover" target="_blank">
+        <img src="images/link_off.png" alt="View Flash presentation for Flatrate pitch" />
+        <p>flatrate.html</p>
+        </a></li>
+        <li class="dragdrop"><a href="links/resume.html" class="rollover" target="_blank">
+        <img src="images/link_off.png" alt="Resume online comic" />
+        <p>resume.html</p>
+        </a></li>
+        <li class="dragdrop"><a href="links/ussa.html" class="rollover" target="_blank">
+        <img src="images/link_off.png" alt="Alejandro Ussa's site" />
+        <p>ussa.html</p>
+        </a></li>
+        <li class="dragdrop"><a href="links/engagecollective.html" class="rollover" target="_blank">
+        <img src="images/link_off.png" alt="Engage Collective's site" />
+        <p>engage.html</p>
+        </a></li>
+        <li class="dragdrop"><a href="links/mobile.html" class="rollover" target="_blank">
+        <img src="images/link_off.png" alt="Mobile site" />
+        <p>mobile.html</p>
+        </a></li>
+      </ul>
+  </div>
+  <!-- ui-dialog -->
+ <div id="webhelp" title="about.txt">
+<p>This disk will be updated once in a while with links relevant to Harry's work. Links will open in new browser windows.</p>
+  </div>
+<!-- ui-dialog -->
+</div>

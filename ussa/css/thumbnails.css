@@ -1,0 +1,634 @@
+@charset "UTF-8";
+
+/* este documento es para indicar los thumbnails. se clasifican en #thumb(número). La primera parte es en estado normal, la segunda es cuando le pasa el mouse. Si cambias el tamaño de los thumbnails vas a tener que cambiar el width y el height a cada uno (mejor no inventar con eso si no entiendes) */
+
+#thumb1 a:link, #thumb1 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/1.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb1 a:hover, #thumb1 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/1.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb2 a:link, #thumb2 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/2.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb2 a:hover, #thumb2 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/2.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb3 a:link, #thumb3 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/3.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb3 a:hover, #thumb3 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/3.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb4 a:link, #thumb4 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/4.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb4 a:hover, #thumb4 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/4.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb5 a:link, #thumb5 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/5.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb5 a:hover, #thumb5 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/5.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb6 a:link, #thumb6 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/6.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb6 a:hover, #thumb6 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/6.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb7 a:link, #thumb7 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/7.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb7 a:hover, #thumb7 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/7.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb8 a:link, #thumb8 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/8.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb8 a:hover, #thumb8 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/8.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb9 a:link, #thumb9 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/9.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb9 a:hover, #thumb9 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/9.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb10 a:link, #thumb10 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/10.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb10 a:hover, #thumb10 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/10.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb11 a:link, #thumb11 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/11.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb11 a:hover, #thumb11 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/11.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb12 a:link, #thumb12 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/12.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb12 a:hover, #thumb12 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/12.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb13 a:link, #thumb13 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/13.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb13 a:hover, #thumb13 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/13.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb14 a:link, #thumb14 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/14.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb14 a:hover, #thumb14 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/14.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb15 a:link, #thumb15 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/15.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb15 a:hover, #thumb15 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/15.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb16 a:link, #thumb16 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/16.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb16 a:hover, #thumb16 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/16.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb17 a:link, #thumb17 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/17.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb17 a:hover, #thumb17 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/17.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb18 a:link, #thumb18 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/18.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb18 a:hover, #thumb18 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/18.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb19 a:link, #thumb19 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/19.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb19 a:hover, #thumb19 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/19.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb20 a:link, #thumb20 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/20.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb20 a:hover, #thumb20 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/20.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb21 a:link, #thumb21 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/21.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb21 a:hover, #thumb21 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/21.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb22 a:link, #thumb22 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/22.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb22 a:hover, #thumb22 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/22.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb23 a:link, #thumb23 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/23.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb23 a:hover, #thumb23 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/23.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb24 a:link, #thumb24 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/24.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb24 a:hover, #thumb24 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/24.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb25 a:link, #thumb25 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/25.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb25 a:hover, #thumb25 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/25.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb26 a:link, #thumb26 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/26.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb26 a:hover, #thumb26 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/26.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb27 a:link, #thumb27 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/27.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb27 a:hover, #thumb27 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/27.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb28 a:link, #thumb28 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/28.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+
+#thumb28 a:hover, #thumb28 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/28.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb29 a:link, #thumb29 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/29.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb29 a:hover, #thumb29 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/29.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
+
+#thumb30 a:link, #thumb30 a:visited {
+	display: block;
+	background-image:url(../images/thumbnails/30.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 122px;
+	height: 60px;
+	float: left;
+	margin: 2px;
+}
+#thumb30 a:hover, #thumb30 a:active {
+	display: block;
+	background-image:url(../images/thumbnails/30.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	width: 122px;
+	height: 60px;	
+	float:left;
+	margin: 2px;
+}
