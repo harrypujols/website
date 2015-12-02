@@ -1,3 +1,8 @@
+/build
+/node_modules
+.DS_Store
+.sass-cache
+.publish
 .htaccess
 .DS_Store
 originals/

@@ -1,0 +1,20 @@
+{% set page.title = "Home" %}
+{% set page.nav = "home" %}
+{% extends 'default.html' %}
+{% block content %}
+<div class="introduction">
+  <h1>Hello!</h1>
+  <p>I'm a front-end developer in New York City. You can contact me on <a href="https://twitter.com/harrypujols">Twitter</a>, <a href="https://www.linkedin.com/in/harrypujols">LinkedIn</a>, and <a href="http://careers.stackoverflow.com/harrypujols">Stack Overflow</a>. Some of you may wonder where's <a href="http://harrypujols.github.io/desktop">my old site</a>.</p>
+</div>
+<div class="updates">
+  <h2>Updates</h2>
+  <table>
+    {% for post in site.posts %}
+    <tr>
+      <td class="date">{{ post.date | date('M j, Y') }}</td>
+      <td class="post"><a href="{{ post.url }}">{{ post.title }}</a></td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endblock %}

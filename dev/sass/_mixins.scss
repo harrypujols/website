@@ -1,0 +1,29 @@
+// ==========================================================================
+// ir
+// ==========================================================================
+@mixin ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+
+    &:before {
+	    content: "";
+	    display: block;
+	    width: 0;
+	    height: 150%;
+	}
+}
+
+// ==========================================================================
+// Media Queries
+// ==========================================================================
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: $breakpoint + 1) { @content; }
+  }
+
+  @if $point == mobile {
+    @media (max-width: $breakpoint) { @content; }
+  }
+}
